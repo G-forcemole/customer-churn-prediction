@@ -22,12 +22,14 @@ for the Telco Customer Churn prediction project.
 
 ## Data Flow
 
-Raw CSV → `raw.customer_churn_raw`  
+Raw CSV (Telco Customer Churn) → `raw.customer_churn_raw`  
 → SQL cleaning → `processed.customer_churn_clean`  
 → Python EDA / modeling
 
 See the [main README](../README.md) for the full pipeline and modeling steps.
 
-Alternatively, the cleaned dataset is available in
-[`data/processed/telco_customer_churn_clean.csv`](../data/processed/telco_customer_churn_clean.csv)
+Note: To run this pipeline from scratch, the [`raw Telco CSV`](../data/processed/telco_customer_churn_clean.csv) must first be
+imported into PostgreSQL as `raw.customer_churn_raw`.
+
+Alternatively, the [`processed Telco CSV`](../data/processed/telco_customer_churn_clean.csv) is available
 for direct use without running the SQL pipeline.
