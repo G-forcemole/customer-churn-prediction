@@ -28,6 +28,22 @@ The dataset contains customer-level information including:
 
 ---
 
+## Data Ingestion & Preprocessing Pipeline
+
+Raw customer data is sourced from a public dataset (available on Kaggle) and stored locally as a raw CSV [`file`](data/raw/telco_customer_churn.csv). This raw data is ingested into a SQL-based workflow to mirror real-world analytics pipelines that rely on relational data processing.
+
+The preprocessing pipeline includes:
+- SQL-based filtering and joins to construct an analytical dataset
+- Handling missing or inconsistent values
+- Standardizing data types and formats
+- Validating row-level and aggregate-level data integrity
+
+After preprocessing, the cleaned dataset can optionally be exported as a preprocessed CSV [`file`](data/processed/telco_customer_churn_clean.csv). This design supports reproducibility and faster experimentation by allowing downstream modeling without repeatedly querying the database, while maintaining a clear separation between raw and processed data.
+
+Additional details on the SQL transformation logic can be found in the [SQL pipeline documentation](/sql/README.md).
+
+---
+
 ## Methodology
 
 ### 1. Exploratory Data Analysis (EDA)
