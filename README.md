@@ -79,3 +79,27 @@ These insights can inform targeted retention strategies such as personalized off
 ---
 
 ## Project Structure
+
+---
+
+## Future Improvements
+- Incorporate additional behavioral or time-series features  
+- Explore advanced models (e.g., XGBoost, LightGBM)  
+- Implement cost-sensitive learning to better align with business objectives  
+- Deploy the model as an API or dashboard for real-time scoring  
+
+---
+
+## Business Impact
+This project demonstrates how predictive analytics can support:
+- Customer retention strategies  
+- Revenue protection  
+- Data-driven decision-making  
+
+By identifying at-risk customers early, organizations can allocate resources more effectively and improve long-term customer value.
+
+---
+
+## Author
+**Gabriel Dos Santos**  
+Aspiring Data Analyst / Data Scientist  
